@@ -53,6 +53,14 @@ app.get('/about', (req, res)=>{
 
 });
 
+app.get('/projects',(req, res)=>{
+	res.render('projects.hbs',{
+		msg : 'Have a quick look at the project details!',
+		pageType : 'Projects Page',
+	});
+
+});
+
 
 app.get('/bad',(req,res)=>{
 	res.send({
